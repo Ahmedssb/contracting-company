@@ -20,6 +20,8 @@ body {
 }
 .home-inner {
     background-image: url('../images/baukran-3703469_1920.jpg');
+        filter: brightness(60%); 
+
 }
 .caption{
     width: 100%;
@@ -29,18 +31,27 @@ body {
     z-index: 1;
 }
 .caption h3{
-    color: #fff;
+    color: #2c234d;
     font-size: 2.4rem;
     text-transform: uppercase;
     padding-bottom: 2rem;
+}
+.caption h5{
+    color: #FFF;
+     font-size: 1.5rem;
+    text-transform: uppercase;
 }
 .start-btn{
     border-width: medium;
     border-radius: 0;
     text-transform: uppercase;
-    padding: 0.5rem 1.1rem;
-    font-size: 0.9rem;
-} 
+    padding: 10px 30px;
+    font-size: 17px;
+    position: absolute;
+    bottom: 60px;
+    left: 40%;
+    background-color: #fda729;
+ } 
 /*--- iOS Landing Page Fix --*/
 .landing {
   position: relative;
@@ -71,32 +82,124 @@ body {
           transform: translateZ(0);
   will-change: transform;
 }
+
+.center {
+    margin-top: 20px;
+    text-align: center;
+}
+.center p{
+    text-align: left
+}
+.info-box{
+    margin-bottom: 20px;
+    
+}
+.info-box:hover{
+-webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+transition: 1s ease;
+}
+
+.heading{
+    margin-bottom: 20px;
+}
+.info-box i{
+    margin-top: 5px;
+    font-size: 40px;
+    color: #fda729;
+}
 /*div that show numbers with image as background */
 .con{
      position: relative; 
+     height: 400px;
+    display: block;
 }
 .numbers{
     position: absolute;
-      bottom: 50%;
+      bottom: -20%;
     left:4%;
       width: 90%;
-    border: 2px solid green;
-}
+    display: block;
+    height: 90%;
+  }
+ 
 .numbers-div{
     display: inline-block;
     width: 30%;
-    border: 2px solid #fff;
-    background-color: #fda729;
-    border-radius: 50%;
-    text-align: center;
-    color: #fff;
+     text-align: center;
+    color:#fda729;
     margin-right: 5px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    border-right: 3px solid #fff;
+ }
+
+.numbers-text{
+     color:#fff;
+    font-size: 30px;
+    border-top: 4px solid #fda729;
+    border-right: none;
+    margin-top: 10px;
+
+}
+.numbers img{
+    filter: brightness(60%); 
+    filter: blur(4px);
 }
 .phrase{
     background-color: #fda729;
     color: #fff;
     padding-bottom: 0px;
+    padding: 30px 0px;
+    text-align: center;
+
 }
+.phrase h4{
+font-size: 40px;
+
+}
+.phrase p{
+text-align: center;
+font-size: 25px;
+}
+
+@keyframes rightFadeInOut {
+  0% {
+    position: absolute;
+    right: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    right: 10rem;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    right: 10rem;
+  }
+}
+
+
+.animated-text{
+  animation-name: rightFadeInOut;
+   animation-duration: 4s;
+ 
+}
+
+.home-inner {
+	opacity: 0;
+	transform: rotate(180deg);
+ 	transition: 1500ms;
+}
+.home-inner.animate {
+	opacity: 1;
+	transform: rotate(0deg);
+}
+
 .footer .row{
     background-color:#2c234d;
      padding: 1rem 2rem;
