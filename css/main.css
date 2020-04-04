@@ -32,13 +32,13 @@ body {
 }
 .caption h3{
     color: #2c234d;
-    font-size: 2.4rem;
+    font-size:50px;
     text-transform: uppercase;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
 }
 .caption h5{
     color: #FFF;
-     font-size: 1.5rem;
+     font-size: 40px;
     text-transform: uppercase;
 }
 .start-btn{
@@ -46,13 +46,13 @@ body {
     border-radius: 0;
     text-transform: uppercase;
     padding: 10px 30px;
-    font-size: 17px;
+    font-size: 20px;
     position: absolute;
     bottom: 60px;
-    left: 40%;
+    left: 43%;
     background-color: #fda729;
  } 
-/*--- iOS Landing Page Fix --*/
+/*---  Landing Page Fix --*/
 .landing {
   position: relative;
   width: 100%;
@@ -131,13 +131,13 @@ transition: 1s ease;
     color:#fda729;
     margin-right: 5px;
     margin-bottom: 20px;
-    font-size: 50px;
+    font-size: 70px;
     border-right: 3px solid #fff;
  }
 
 .numbers-text{
      color:#fff;
-    font-size: 30px;
+    font-size: 35px;
     border-top: 4px solid #fda729;
     border-right: none;
     margin-top: 10px;
@@ -218,3 +218,28 @@ font-size: 25px;
   padding-top: 0px;  
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.caption h3{
+font-size: 25px;
+    }
+.caption h5{
+font-size: 20px;
+    }
+.start-btn{
+left: 20%;
+font-size: 15px;    
+    }
+.numbers-div{
+font-size:25px;
+    } 
+.numbers-text{
+font-size: 17px;
+    }
+.phrase h4{
+font-size: 20px;
+    }
+.phrase p{
+font-size:13px;    
+    }
+}
