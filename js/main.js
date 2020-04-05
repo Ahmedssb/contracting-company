@@ -105,12 +105,25 @@ $(document).ready(function(){
     arrLang['ar']['footer-num'] = '+966 564712596 ';
     arrLang['ar']['footer-name'] = 'ثقة';
 
+     var lang;
+    
+    (function(window, $) {
+      lang = window.navigator.language;
+    if (lang == 'ar' ) {
+        lang = 'ar';  
+    }else{
+        
+      lang = 'en';  
  
+    }
+    })(window, jQuery);
+
+    
 
     // Process translation
     $(function() {
       $('.translate').click(function() {
-        var lang = $(this).attr('id');
+          lang = $(this).attr('id');
 
         $('.lang').each(function(index, item) {
           $(this).text(arrLang[lang][$(this).attr('key')]);
